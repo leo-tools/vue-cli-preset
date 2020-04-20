@@ -1,6 +1,4 @@
 module.exports = (api, options, rootOptions) => {
-    api.render('./template')
-
     api.extendPackage({
         'dependencies': {
             'axios': '^0.19.0',
@@ -49,4 +47,6 @@ module.exports = (api, options, rootOptions) => {
             ]
         }
     })
+
+    api.render('./template')
 }
